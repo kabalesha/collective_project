@@ -1,11 +1,11 @@
 {
-  "name": "vanilla-app-template",
+  "name": "collective_project",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/vanilla-app-template/",
+    "build": "vite build --base=/collective_project/",
     "preview": "vite preview"
   },
   "devDependencies": {
