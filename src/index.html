@@ -5,19 +5,34 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vanilla App Template</title>
-    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- Base styles -->
+    <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
-    <load ="partials/header.html" />
+    <!-- Partials -->
+        <!-- Header -->
+    <load src="./partials/header.html"/>
 
-    <section>
-      <h1>Lorem ipsum dolor sit amet.</h1>
-      <!-- Path to images as from index.html file -->
-      <img src="./img/javascript.svg" alt="" />
-    </section>
+      <main>
+        <!-- Hero section -->
+    <load src="./partials/hero.html"/>
 
-    <!-- Loads the specified .html file -->
-    <load ="partials/vite-promo.html" />
+        <!-- About section -->
+    <load src="./partials/about.html"/>
+
+        <!-- Store section -->
+    <load src="./partials/store.html"/>
+
+        <!-- Delivery section -->
+    <load src="./partials/delivery.html"/>
+
+        <!-- Blog section -->
+    <load src="./partials/blog.html"/>
+
+      </main>
+        <!-- Footer -->
+
+    <load src="./partials/footer.html"/>
 
     <script type="module" src="/main.js"></script>
   </body>
