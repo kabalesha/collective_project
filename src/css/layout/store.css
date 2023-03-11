@@ -1,0 +1,122 @@
+.store-section {
+  padding-bottom: 60px;
+}
+.store-section-title {
+  margin-bottom: 32px;
+}
+.store-subtitle {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.25;
+
+  color: #000;
+
+  margin-bottom: 6px;
+}
+.store-desc {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.25;
+  color: rgba(0, 0, 0, 0.6);
+}
+.store-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+
+  margin-bottom: 32px;
+}
+.store-list-item {
+  flex-basis: calc((100% - 16px * (2 - 1)) / 2);
+}
+.store-list-pic {
+  display: block;
+  margin-bottom: 12px;
+}
+.store-btn {
+  color: white;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 500;
+  padding: 10px 35px;
+
+  min-width: 208px;
+  min-height: 44px;
+
+  background-color: #e86f54;
+
+  border: transparent;
+  border-radius: 38px;
+}
+@media screen and (min-width: 768px) {
+  .store-section {
+    padding-bottom: 100px;
+  }
+  .store-section-title {
+    margin-bottom: 60px;
+  }
+  .store-list {
+    gap: 40px 32px;
+    margin-bottom: 60px;
+  }
+  .store-list-item {
+    flex-basis: calc((100% - 32px * (2 - 1)) / 2);
+  }
+  .store-list-pic {
+    margin-bottom: 16px;
+  }
+  .store-subtitle {
+    font-size: 32px;
+    line-height: 1.22;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .store-subtitle-line {
+    display: block;
+    flex-grow: 1;
+    height: 1px;
+    background-color: #000;
+  }
+  /* .store-subtitle::after {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+  } */
+  .store-desc {
+    font-size: 24px;
+    line-height: 1.25;
+  }
+  .store-btn {
+    font-size: 28px;
+    line-height: 0.86;
+
+    min-width: 280px;
+    min-height: 64px;
+
+    padding: 20px 44px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .store-list {
+    gap: 64px 32px;
+  }
+  .store-section-title {
+    margin-bottom: 80px;
+  }
+  .store-subtitle {
+    font-size: 36px;
+    margin-bottom: 4px;
+  }
+  .store-desc {
+    font-size: 28px;
+    line-height: 1.21;
+  }
+}
