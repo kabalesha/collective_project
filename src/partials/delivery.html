@@ -1,43 +1,61 @@
 <section class="delivery">
   <div class="container">
-  <h2 class="section-title">Delivery</h2>
-  <ul class="delivery-list">
-    <li class="delivery-item">
-      <div class="delivery-number">1</div>
-      Choose your bouquet and make an order on website
-    </li>
-    <li class="delivery-item">
-      <div class="delivery-number">2</div>
-      Wait for the call to clarify the details of the order. You can pay online
-      or to the courier
-    </li>
-    <li class="delivery-item">
-      <div class="delivery-number">3</div>
-      Wait for the delivery at the selected time or pick up the order from the
-      store
-    </li>
-    <li class="delivery-item">
-      <div class="delivery-number">4</div>
-      Make someone happy or enjoy yourself
-    </li>
-  </ul>
-</div>
-  <img
-    class="delivery_img"
-    srcset="
-      ./img/delivery_img/delivery_mob@1x.jpg   320w,
-      ./img/delivery_img/delivery_mob@2x.jpg   640w,
-      ./img/delivery_img/delivery_tab@1x.jpg   768w,
-      ./img/delivery_img/delivery_desk@1x.jpg 1280w,
-      ./img/delivery_img/delivery_tab@2x.jpg  1536w,
-      ./img/delivery_img/delivery_desk@2x.jpg 2560w
-    "
-    sizes="(min-width: 1280px) 1280px, (min-width: 768px) 768px, (min-width: 480px) 320px, 100vw"
-    src="./img/delivery_img/delivery_mob@1x.jpg"
-    alt="flowers delivery"
-    width="100%"
-    height="100%"
-    loading="lazy"
-  />
+    <h2 class="section-title">Delivery</h2>
+    <ul class="delivery-list">
+      <li class="delivery-item">
+        <div class="delivery-number">1</div>
+        Choose your bouquet and make an order on website
+      </li>
+      <li class="delivery-item">
+        <div class="delivery-number">2</div>
+        Wait for the call to clarify the details of the order. You can pay
+        online or to the courier
+      </li>
+      <li class="delivery-item">
+        <div class="delivery-number">3</div>
+        Wait for the delivery at the selected time or pick up the order from the
+        store
+      </li>
+      <li class="delivery-item">
+        <div class="delivery-number">4</div>
+        Make someone happy or enjoy yourself
+      </li>
+    </ul>
+  </div>
+  <picture>
+    <source
+      media="(min-width: 1200px)"
+      srcset="
+        ./img/delivery_img/delivery_desk@1x.jpg 1x,
+        ./img/delivery_img/delivery_desk@2x.jpg 2x
+      "
+      type="image/jpeg"
+    />
 
+    <source
+      media="(min-width: 768px)"
+      srcset="
+        ./img/delivery_img/delivery_tab@1x.jpg 1x,
+        ./img/delivery_img/delivery_tab@2x.jpg 2x
+      "
+      type="image/jpeg"
+    />
+    <source
+      media="(max-width: 767px)"
+      srcset="
+        ./img/delivery_img/delivery_mob@1x.jpg 1x,
+        ./img/delivery_img/delivery_mob@2x.jpg 2x
+      "
+      type="image/jpeg"
+    />
+
+    <img
+      class="delivery_img"
+      src="./img/delivery_img/delivery_mob@1x.jpg"
+      alt="flowers delivery"
+      width="100%"
+      height="100%"
+      loading="lazy"
+    />
+  </picture>
 </section>

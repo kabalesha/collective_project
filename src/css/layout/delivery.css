@@ -1,19 +1,20 @@
 .delivery {
-  padding-bottom: 100px;
+  padding-bottom: 60px;
 }
 .delivery-list {
   display: flex;
   flex-wrap: wrap;
-  align-content: center;
-  margin-top: 60px;
-
+  margin-top: 32px;
+  gap: 19px;
   flex-direction: column;
-  gap: 20px;
-  padding-bottom: 40px;
+
+  padding-bottom: 32px;
 }
+
 .delivery-item {
   display: flex;
   align-items: center;
+  gap: 8px;
   font-weight: 500;
   font-size: 14px;
   line-height: calc(17 / 14);
@@ -21,16 +22,58 @@
 .delivery-number {
   width: 40px;
   height: 40px;
+  font-size: 20px;
+  line-height: calc(24 / 20);
+  font-weight: 500;
+
   border-radius: 50%;
   border: 1px solid;
-  padding: 8px 14px;
+  padding: 8px 16px;
   text-align: center;
   justify-content: center;
   display: flex;
   align-items: center;
-  margin-right: 20px;
 }
 .delivery-img {
   width: 100%;
   object-fit: cover;
+}
+@media screen and (min-width: 768px) {
+  .delivery-number {
+    font-size: 26px;
+    line-height: calc(32 / 26);
+    padding: 16px 24px;
+  }
+  .delivery-item {
+    font-size: 24px;
+    line-height: calc(29 / 24);
+    gap: 20px;
+  }
+  .delivery-list {
+    padding-bottom: 40px;
+    margin-top: 60px;
+    gap: 20px;
+  }
+  .delivery {
+    padding-bottom: 100px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .delivery-list {
+    padding-left: 72px;
+    gap: 52px;
+  }
+  .delivery-number {
+    font-size: 26px;
+    line-height: calc(32 / 26);
+  }
+  .delivery-item {
+    font-size: 32px;
+    line-height: calc(39 / 32);
+    gap: 56px;
+  }
+  .delivery-list {
+    padding-bottom: 69px;
+    margin-top: 91px;
+  }
 }
