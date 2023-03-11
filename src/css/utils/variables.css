@@ -13,4 +13,8 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     -webkit-text-size-adjust: 100%;
+    -secondary-text-cl: #FFFFFF;
+    -mw-text-cl: #5C5C5C;
+    -other-text-cl: #00000066;
+
   }
