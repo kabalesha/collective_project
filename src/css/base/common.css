@@ -19,3 +19,18 @@
   height: 1px;
   background-color: #000;
 }
+.btn {
+  color: white;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+
+  background-color: var(--btn-bg-cl);
+
+  border: none;
+  border-radius: 38px;
+}
+.btn:hover,
+.btn:focus{
+  background-color: var(--hover-btn-cl);
+}
