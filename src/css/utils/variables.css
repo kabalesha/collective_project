@@ -16,5 +16,14 @@
   --mw-text-cl: #5c5c5c;
   --other-text-cl: #00000066;
   --btn-bg-cl: #e86f54;
-  --hover-btn-cl: #E25B41;
+  --hover-btn-cl: #e25b41;
+  --label-text-cl: rgba(17, 17, 17, 0.7);
+  --pl-holder-cl: rgba(17, 17, 17, 0.4);
+  --input-border-cl: #d7d7d7;
+  --input-invalid-cl: #e74a3b;
+  --input-valid-cl: #3cbc81;
+  --def-btn-send-cl: rgba(232, 111, 84, 0.4);
+  --backdrop-cl: rgba(0, 0, 0, 0.3);
+  /* for animation */
+  --trans-hv: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
