@@ -62,18 +62,35 @@
   display: block;
   width: 236px;
   height: 35px;
-
+  outline: transparent;
   padding-left: 18px;
   padding-right: 18px;
-
   border: 1px solid #d7d7d7;
   border-radius: 4px;
+  transition: border var(--trans-hv);
 }
 .subscribe-modal-btn {
   padding: 10px 82px;
   border-radius: 8px;
 }
+.subscribe-icon {
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  pointer-events: none;
+}
+.subscribe-icon-invalid,
+.subscribe-icon-valid {
+  display: none;
+}
 .modal-subscribe-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(-20px);
   color: #5c5c5c;
   font-weight: 500;
   font-size: 10px;
@@ -85,6 +102,47 @@
   line-height: 15px;
 
   color: rgba(0, 0, 0, 0.3);
+}
+.subscribe-input:placeholder-shown ~ .modal-subscribe-label {
+  color: var(--label-text-cl);
+}
+.subscribe-input:focus:placeholder-shown,
+.subscribe-input:focus-visible:placeholder-shown {
+  border-color: var(--label-text-cl);
+}
+.subscribe-input:not(:placeholder-shown):required:valid {
+  border-color: var(--input-valid-cl);
+}
+.subscribe-input:not(:placeholder-shown):required:valid
+  ~ .modal-subscribe-label {
+  color: var(--input-valid-cl);
+}
+.subscribe-input:not(:placeholder-shown):required:valid
+  + .subscribe-icon
+  > .subscribe-icon-valid {
+  display: block;
+}
+.subscribe-input:not(:placeholder-shown):required:valid
+  + .subscribe-icon
+  > .subscribe-icon-invalid {
+  display: none;
+}
+.subscribe-input:not(:placeholder-shown):required:invalid {
+  border-color: var(--input-invalid-cl);
+}
+.subscribe-input:not(:placeholder-shown):required:invalid
+  ~ .modal-subscribe-label {
+  color: var(--input-invalid-cl);
+}
+.subscribe-input:not(:placeholder-shown):required:invalid
+  + .subscribe-icon
+  > .subscribe-icon-invalid {
+  display: block;
+}
+.subscribe-input:not(:placeholder-shown):required:invalid
+  + .subscribe-icon
+  > .subscribe-icon-valid {
+  display: none;
 }
 .modal-btn-subscribe-close {
   position: absolute;
@@ -125,6 +183,7 @@
     font-size: 16px;
   }
   .modal-form {
+    position: relative;
     margin-bottom: 28px;
     width: 336px;
     margin-left: auto;
@@ -136,6 +195,7 @@
     margin-top: 8px;
   }
   .modal-subscribe-label {
+    transform: translateY(-25px);
     font-size: 14px;
     line-height: calc(17 / 14);
   }

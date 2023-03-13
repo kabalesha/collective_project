@@ -146,7 +146,7 @@
 }
 .modal-send-input:focus:placeholder-shown,
 .modal-send-input:focus-visible:placeholder-shown {
-  border: 1px solid var(--label-text-cl);
+  border-color: var(--label-text-cl);
 }
 @media screen and (min-width: 768px) {
   .modal-send-input {
