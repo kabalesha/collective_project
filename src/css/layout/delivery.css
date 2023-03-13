@@ -34,7 +34,10 @@
   display: flex;
   align-items: center;
 }
-.delivery-img {
+.picture-subs {
+  display: block;
+}
+.delivery_img {
   width: 100%;
   object-fit: cover;
 }

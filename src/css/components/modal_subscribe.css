@@ -101,7 +101,13 @@
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+.picture-modal {
+  display: block;
+}
+.img-subs {
+  min-width: 100%;
+  object-fit: cover;
+}
 @media screen and (min-width: 768px) {
   .modal-subscribe-title {
     font-size: 28px;
@@ -172,11 +178,18 @@
     max-width: 860px;
     height: 528px;
     display: flex;
-    width: 860px;
   }
 
   .modal-btn-subscribe-close {
     width: 16px;
     height: 16px;
+  }
+  .picture-modal {
+    width: 428px;
+  }
+  .img-subs {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
   }
 }
