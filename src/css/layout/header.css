@@ -1,21 +1,121 @@
-.header {
-  padding: 20px 0;
+.header{
+  padding-top: 16px;
+ }
+
+ @media screen and (min-width:1280px){
+  .header{
+    position: absolute;
+      top: 28px;
+      z-index: 100;
+      width: 100%;
+      --shift-from-x: 0;
+      --shift-to-x: 0;
+      animation: move-vertical 1000ms ease-out 1000ms both; 
+  }
+ }
+
+ .header-container {
+   display: flex;
+   align-items: center;
+ }
+@media screen and (min-width:1280px){
+  .header-container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+       --shift-from-x: 0;
+        --shift-to-x: 0;
+        animation: move-vertical 1000ms ease-out 1000ms both; 
+    }
 }
 
-.nav-list {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 40px;
+
+
+.header-logo {
+  height: 35px;
+ margin-right: auto;
+  fill: #0E0E0E;
+}
+@media screen and (min-width:768px) {
+  .header-logo {
+    width: 72px;
+    height: 57px;
+    margin-right: 80px;
+  }
 }
 
-.nav-link {
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  line-height: 1.5;
+@media screen and (min-width:1280px) {
+  .header-logo {
+   margin-right: 261px;
+    animation: move-vertical 1000ms ease-out 1000ms both;
+  }
 }
 
-.nav-link:hover,
-.nav-link:focus {
-  color: #747bff;
+
+.header-nav {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+margin-right: auto;
+  }
+   
+.header-list{
+  display: none;
+
+
+  font-size: 20px;
+    line-height: 1.2;
+  color: black;
+
 }
+@media screen and (min-width:768px){
+  .header-list {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 24px;
+      
+
+    }
+}
+@media screen and (min-width:1280px){
+  .header-list{
+    gap: 48px;
+    animation: move-vertical 1000ms ease-out 1000ms both;
+    }
+}
+.contact-btn{
+  margin-right: 18px;
+}
+@media screen and (min-width:768px){
+  .contact-btn{
+    margin-right: 0;
+  }
+}
+
+
+@media screen and (min-width:768px){
+  .tel-icon{
+    width: 24px;
+    height: 24px;
+  
+  }
+}
+@media screen and (min-width:1280px){
+  .tel-icon{
+    width: 28px;
+      height: 28px;
+  }
+}
+
+@media screen and (min-width:768px){
+.menu-btn{
+  display: none;
+}
+}
+
+
+
