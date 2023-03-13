@@ -1,78 +1,79 @@
 <div class="backdrop-subscribe is-hidden" data-modal-sbscr>
   <div class="modal-subscribe">
-    <picture>
-      <source
-        media="(min-width: 1280px)"
-        srcset="
-          ./img/subscribe_modal_img/_desk_@1x.jpg 1x,
-          ./img/subscribe_modal_img/_desk_@2x.jpg 2x
-        "
-        type="image/jpeg"
-      />
-
-      <source
-        media="(min-width: 768px)"
-        srcset="
-          ./img/subscribe_modal_img/_tab_@1x.jpg 1x,
-          ./img/subscribe_modal_img/_tab_@2x.jpg 2x
-        "
-        type="image/jpeg"
-      />
-      <source
-        media="(max-width: 767px)"
-        srcset="
-          ./img/subscribe_modal_img/_mob_@1x.jpg 1x,
-          ./img/subscribe_modal_img/_mob_@2x.jpg 2x
-        "
-        type="image/jpeg"
-      />
-
-      <img
-        class="img-subs"
-        src="./img/subscribe_modal_img/_mob_@1x.jpg"
-        alt="flowers subscribe"
-        width="100%"
-        height="100%"
-        loading="lazy"
-      />
-    </picture>
-    <button
-      class="modal-btn-subscribe-close"
-      type="button"
-      data-modal-sbscr-close
-    >
-      <svg class="icon-close-modal" width="16" height="16">
-        <use href="./img/icons.svg#icon-cross"></use>
-      </svg>
-    </button>
-    <div class="container-subscribe">
-      <strong class="modal-subscribe-title">Follow to our newsletter</strong>
-      <p class="subscribe-txt">
-        Be the first to get exclusive offers and the latest news on our product
-        directly in your box.
-      </p>
-      <form class="modal-form" name="modal_form_subscribe">
-        <input
-          class="subscribe-input"
-          type="email"
-          name="subscribe_email"
-          placeholder="Your email"
-          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-          required
+    <div class="picture-modal">
+      <picture>
+        <source
+          media="(min-width: 1280px)"
+          srcset="
+            ./img/subscribe_modal_img/_desk_@1x.jpg 1x,
+            ./img/subscribe_modal_img/_desk_@2x.jpg 2x
+          "
+          type="image/jpeg"
         />
-        <svg class="subscribe-icon">
-          <use
-            class="subscribe-icon-valid"
-            href="./img/icons.svg#sucess-logo"
-          ></use>
-          <use
-            class="subscribe-icon-invalid"
-            href="./img/icons.svg#error-logo"
-          ></use>
+
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./img/subscribe_modal_img/_tab_@1x.jpg 1x,
+            ./img/subscribe_modal_img/_tab_@2x.jpg 2x
+          "
+          type="image/jpeg"
+        />
+        <source
+          media="(max-width: 767px)"
+          srcset="
+            ./img/subscribe_modal_img/_mob_@1x.jpg 1x,
+            ./img/subscribe_modal_img/_mob_@2x.jpg 2x
+          "
+          type="image/jpeg"
+        />
+        <img
+          class="img-subs"
+          src="./img/subscribe_modal_img/_mob_@1x.jpg"
+          alt="flowers subscribe"
+          width="272"
+          height="121"
+          loading="lazy"
+        />
+      </picture>
+      <button
+        class="modal-btn-subscribe-close"
+        type="button"
+        data-modal-sbscr-close
+      >
+        <svg class="icon-close-modal" width="16" height="16">
+          <use href="./img/icons.svg#icon-cross"></use>
         </svg>
-        <label class="modal-subscribe-label" for="user_email">Email</label>
-      </form>
-      <button class="btn subscribe-modal-btn" type="submit">Subscribe</button>
+      </button>
+      <div class="container-subscribe">
+        <strong class="modal-subscribe-title">Follow to our newsletter</strong>
+        <p class="subscribe-txt">
+          Be the first to get exclusive offers and the latest news on our
+          product directly in your box.
+        </p>
+        <form class="modal-form" name="modal_form_subscribe">
+          <input
+            class="subscribe-input"
+            type="email"
+            name="subscribe_email"
+            placeholder="Your email"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+            required
+          />
+          <svg class="subscribe-icon">
+            <use
+              class="subscribe-icon-valid"
+              href="./img/icons.svg#sucess-logo"
+            ></use>
+            <use
+              class="subscribe-icon-invalid"
+              href="./img/icons.svg#error-logo"
+            ></use>
+          </svg>
+          <label class="modal-subscribe-label" for="user_email">Email</label>
+        </form>
+        <button class="btn subscribe-modal-btn" type="submit">Subscribe</button>
+      </div>
     </div>
   </div>
 </div>
