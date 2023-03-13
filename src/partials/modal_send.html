@@ -1,0 +1,81 @@
+<!-- modal window -->
+<div class="backdrop-modal is-hidden" data-modal>
+  <div class="modal-send">
+    <button class="modal-send-btn flex-center" type="button" data-modal-close>
+      <svg class="modal-send-icon-close">
+        <use href="./img/icons.svg#icon-cross-send"></use>
+      </svg>
+    </button>
+    <h2 class="modal-send-title">Contact us</h2>
+    <p class="modal-send-text">
+      If you have any additional questions or you want to clarify something
+      before you make an order please fill in your contact details. We will call
+      you back.
+    </p>
+    <form class="modal-send-form" name="modal_send_form" data-modal-form>
+      <!-- user name -->
+
+      <div class="modal-send-form-group modal-send-form-group-user">
+        <input
+          type="text"
+          name="user_name"
+          id="user_name"
+          class="modal-send-input"
+          placeholder="Your name"
+          minlength="3"
+          maxlength="25"
+          pattern="[A-Za-z]{3,25}"
+          required
+          data-modal-input
+        />
+        <!-- pattern="^[a-zA-Z]+\s[a-zA-Z]+$" -->
+        <svg class="modal-send-icon">
+          <use
+            class="modal-send-icon-valid"
+            href="./img/icons.svg#sucess-logo"
+          ></use>
+          <use
+            class="modal-send-icon-invalid"
+            href="./img/icons.svg#error-logo"
+          ></use>
+        </svg>
+        <label class="modal-send-form-label" for="user_name">Name</label>
+      </div>
+      <!-- email -->
+
+      <div class="modal-send-form-group modal-send-form-group-mail">
+        <input
+          type="email"
+          name="user_mail"
+          id="modal_mail"
+          class="modal-send-input"
+          placeholder="Your email"
+          minlength="6"
+          maxlength="25"
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+          required
+          data-modal-input
+        />
+        <svg class="modal-send-icon">
+          <use
+            class="modal-send-icon-valid"
+            href="./img/icons.svg#sucess-logo"
+          ></use>
+          <use
+            class="modal-send-icon-invalid"
+            href="./img/icons.svg#error-logo"
+          ></use>
+        </svg>
+        <label class="modal-send-form-label" for="modal_mail">Email</label>
+      </div>
+      <button
+        class="modal-send-subm-btn"
+        type="submit"
+        disabled
+        data-modal-subm-btn
+      >
+        Send
+      </button>
+    </form>
+  </div>
+</div>
