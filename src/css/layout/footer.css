@@ -1,18 +1,44 @@
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1279px) {
     .footer-logo {
         display: none;
     }
 }
 
+.container {
+    min-width: 320px;
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+
+    /* justify-content: center; */
+}
+
 .footer {
     padding-top: 32px;
     padding-bottom: 32px;
-    padding-left: 15px;
-    padding-right: 15px;
     background-color: black;
     color: white;
     display: flex;
-    justify-content: center;
+}
+
+.footer-gap-div {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 42px;
+    row-gap: 20px;
+}
+
+.footer-navigation {
+    width: 116px;
+}
+
+
+
+.footer-text {
+    font-size: 14px;
+    font-family: "inter";
 }
 
 .footer-subtitle-nav {
@@ -40,12 +66,22 @@
     line-height: 1.2;
 }
 
+.footer-contacts {
+    width: 128px;
+}
+
 .footer-subtitle-contacts {
     margin-bottom: 18px;
     font-family: 'Inter';
     font-weight: 700;
     font-size: 18px;
     line-height: 22px;
+}
+
+.contacts-list {
+    font-family: "inter";
+    font-size: 14px;
+    letter-spacing: 1.2;
 }
 
 .footer-item-contacts {
@@ -57,26 +93,24 @@
     line-height: 17px;
 }
 
-.footer-div {
+.link-flex {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.footer-contacts-div {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 32px;
 }
 
 .social-list {
     display: flex;
 }
 
+.social-item {
+    margin-right: 20px;
+}
+
 
 @media screen and (min-width: 768px) {
     .container {
         max-width: 768px;
+        padding-left: 24px;
+        padding-right: 24px;
     }
 
     .footer {
@@ -91,9 +125,11 @@
 
     }
 
-    .footer-subtitle-nav {
+    .footer-navigation {
         width: 144px;
-        margin-right: 44px;
+    }
+
+    .footer-subtitle-nav {
         font-family: 'Inter';
         font-weight: 700;
         font-size: 20px;
@@ -111,7 +147,6 @@
 
     .footer-subtitle-time {
         width: 143px;
-        margin-right: 44px;
         font-family: 'Inter';
         font-weight: 700;
         font-size: 20px;
@@ -124,6 +159,10 @@
         font-weight: 500;
         font-size: 16px;
         line-height: 1.2;
+    }
+
+    .footer-contacts {
+        width: 263px;
     }
 
     .footer-subtitle-contacts {
@@ -141,8 +180,17 @@
         line-height: 1.2;
     }
 
+    .link-flex {
+        display: inline-flex;
+    }
+
     .social-list {
         display: block;
+    }
+
+    .social-item {
+        margin-right: 0;
+        margin-bottom: 20px;
     }
 }
 
@@ -160,7 +208,7 @@
     }
 
     .footer-logo {
-        margin-right: 210px;
+        margin-right: 118px;
     }
 
     .footer-gap-div {
@@ -170,10 +218,19 @@
 
     .footer-subtitle-nav {
         margin-right: 0;
+        margin-left: 0;
     }
 
     .footer-subtitle-time {
         margin-right: 0;
+    }
+
+    .footer-contacts {
+        width: 333px;
+    }
+
+    .contacts-list {
+        font-size: 16px;
     }
 
     .social-list {
