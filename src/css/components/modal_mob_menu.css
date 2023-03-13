@@ -1,0 +1,59 @@
+.mob-menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-top: 124px;
+
+  padding-bottom: 40px;
+  background-color: var(--btn-bg-cl);
+  z-index: 9999;
+
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+  overflow-y: scroll;
+}
+.mob-menu-container.is-open {
+  transform: translateX(0);
+}
+.menu-toggle {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  transition: background-color 250ms ease-in-out;
+}
+.mob-close-btn-icon {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.mob-menu-body {
+  display: flex;
+  flex-direction: column;
+}
+.mob-menu-item {
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  color: var(--secondary-text-cl);
+}
+.mob-menu-item:not(:last-child) {
+  margin-bottom: 26px;
+}
+.mob-menu-list {
+  margin-bottom: auto;
+}
+@media screen and (min-width: 768px) {
+  .mob-menu-container {
+    display: none;
+  }
+}
