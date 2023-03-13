@@ -27,7 +27,7 @@
     
     
     <script type="module" crossorigin src="/collective_project/assets/index-db0339d3.js"></script>
-    <link rel="stylesheet" href="/collective_project/assets/index-711743b9.css">
+    <link rel="stylesheet" href="/collective_project/assets/index-266150db.css">
   </head>
   <body>
     <!-- Partials -->
@@ -74,21 +74,21 @@
   <div class="hero-container">
     <h1 class="hero-title">ANEMONE</h1>
     <h2 class="hero-badge">flower studio</h2>
-    <button class="hero-btn" type="button">
+    <button class="hero-btn" type="button" data-modal-open>
       <svg class="hero-btn-icon">
         <use
           class="hero-btn-txt hero-btn-icon-mob"
-          href="/collective_project/assets/icons-7d3a5aeb.svg#btn-txt-mob"
+          href="/collective_project/assets/icons-9d508660.svg#btn-txt-mob"
         ></use>
         <use
           class="hero-btn-txt hero-btn-icon-tab"
-          href="/collective_project/assets/icons-7d3a5aeb.svg#btn-txt-tab"
+          href="/collective_project/assets/icons-9d508660.svg#btn-txt-tab"
         ></use>
         <use
           class="hero-btn-txt hero-btn-icon-desk"
-          href="/collective_project/assets/icons-7d3a5aeb.svg#btn-txt-desk"
+          href="/collective_project/assets/icons-9d508660.svg#btn-txt-desk"
         ></use>
-        <use class="hero-btn-arrow" href="/collective_project/assets/icons-7d3a5aeb.svg#btn-arrow"></use>
+        <use class="hero-btn-arrow" href="/collective_project/assets/icons-9d508660.svg#btn-arrow"></use>
       </svg>
     </button>
   </div>
@@ -780,14 +780,14 @@
         <li class="arrow-item">
           <button class="arrow-btn" type="button">
             <svg class="blog-svg" width="100%" height="100%">
-              <use href="/collective_project/assets/icons-7d3a5aeb.svg#icon-left-arrow"></use>
+              <use href="/collective_project/assets/icons-9d508660.svg#icon-left-arrow"></use>
             </svg>
           </button>
         </li>
         <li class="arrow-item">
           <button class="arrow-btn" type="button">
             <svg class="blog-svg" width="100%" height="100%">
-              <use href="/collective_project/assets/icons-7d3a5aeb.svg#icon-right-arrow"></use>
+              <use href="/collective_project/assets/icons-9d508660.svg#icon-right-arrow"></use>
             </svg>
           </button>
         </li>
@@ -858,7 +858,88 @@
         </div>
     </div>
 </footer>
-    
+    <!-- modal window -->
+<div class="backdrop-modal is-hidden" data-modal>
+  <div class="modal-send">
+    <button class="modal-send-btn flex-center" type="button" data-modal-close>
+      <svg class="modal-send-icon-close">
+        <use href="/collective_project/assets/icons-9d508660.svg#icon-cross-send"></use>
+      </svg>
+    </button>
+    <h2 class="modal-send-title">Contact us</h2>
+    <p class="modal-send-text">
+      If you have any additional questions or you want to clarify something
+      before you make an order please fill in your contact details. We will call
+      you back.
+    </p>
+    <form class="modal-send-form" name="modal_send_form" data-modal-form>
+      <!-- user name -->
+
+      <div class="modal-send-form-group modal-send-form-group-user">
+        <input
+          type="text"
+          name="user_name"
+          id="user_name"
+          class="modal-send-input"
+          placeholder="Your name"
+          minlength="3"
+          maxlength="25"
+          pattern="[A-Za-z]{3,25}"
+          required
+          data-modal-input
+        />
+        <!-- pattern="^[a-zA-Z]+\s[a-zA-Z]+$" -->
+        <svg class="modal-send-icon">
+          <use
+            class="modal-send-icon-valid"
+            href="/collective_project/assets/icons-9d508660.svg#sucess-logo"
+          ></use>
+          <use
+            class="modal-send-icon-invalid"
+            href="/collective_project/assets/icons-9d508660.svg#error-logo"
+          ></use>
+        </svg>
+        <label class="modal-send-form-label" for="user_name">Name</label>
+      </div>
+      <!-- email -->
+
+      <div class="modal-send-form-group modal-send-form-group-mail">
+        <input
+          type="email"
+          name="user_mail"
+          id="modal_mail"
+          class="modal-send-input"
+          placeholder="Your email"
+          minlength="6"
+          maxlength="25"
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+          required
+          data-modal-input
+        />
+        <svg class="modal-send-icon">
+          <use
+            class="modal-send-icon-valid"
+            href="/collective_project/assets/icons-9d508660.svg#sucess-logo"
+          ></use>
+          <use
+            class="modal-send-icon-invalid"
+            href="/collective_project/assets/icons-9d508660.svg#error-logo"
+          ></use>
+        </svg>
+        <label class="modal-send-form-label" for="modal_mail">Email</label>
+      </div>
+      <button
+        class="modal-send-subm-btn"
+        type="submit"
+        disabled
+        data-modal-subm-btn
+      >
+        Send
+      </button>
+    </form>
+  </div>
+</div>
+
     
     
     <div class="backdrop is-hidden backdrop-thnx display" data-modal>
@@ -870,7 +951,7 @@
     </button>
     <div class="thnx-svg">
       <svg class="thnx-img">
-        <use href="/collective_project/assets/icons-7d3a5aeb.svg#icon-thank_you"></use>
+        <use href="/collective_project/assets/icons-9d508660.svg#icon-thank_you"></use>
       </svg>
     </div>
 
