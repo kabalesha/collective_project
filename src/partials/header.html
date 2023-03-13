@@ -19,12 +19,19 @@
     </nav>
 
     <button class="contact-btn" type="button">
-      <svg class="tel-icon" width="22" height="22">
-        <use href="../img/icons.svg#icon-tel_logo"></use>
-      </svg>
+      <a href="tel:+380631234567">
+        <svg class="tel-icon" width="22" height="22">
+          <use href="../img/icons.svg#icon-tel_logo"></use>
+        </svg>
+      </a>
     </button>
 
-    <button class="menu-btn" type="button">
+    <button
+      class="menu-btn js-open-menu"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+      type="button"
+    >
       <svg class="menu-icon" width="24" height="24">
         <use href="../img/icons.svg#icon-burger_menu"></use>
       </svg>
