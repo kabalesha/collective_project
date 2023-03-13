@@ -1,4 +1,44 @@
 
-<section>
-    <h3 class="about">About</h3>
+<section class="about-section" id="about">
+    <div class="container">
+    <h3 class="about-title section-title">About</h3>
+    <div class="about-wrapper">
+    <p class="about-text">We are a minimalistic flower studio. We love people and flowers. Therefore, every day we give people the beauty and joy
+    creating stylish and modern masterpieces. Every bouquet we create is unique as you are.</p>
+    <picture class="">
+    <source 
+      media="(min-width: 1280px)"
+      srcset="
+        ./img/about/image_about_desk@1x.png 1x,
+        ./img/about/image_about_desk@2x.png 2x
+      "
+      type="image/png"
+    />
+    <source 
+      media="(min-width: 768px)" 
+      srcset="
+        ./img/about/image_about_tabl@1x.png 1x,
+        ./img/about/image_about_tabl@2x.png 2x
+        "
+        type="image/png" 
+    />
+    <source 
+      media="(max-width: 767px)" 
+      srcset="
+        ./img/about/image_about_mobl@1x.png 1x,
+        ./img/about/image_about_mobl@2x.png 2x
+        " 
+        type="image/png" 
+    />
+
+        <img 
+        src="../img/about/image_about_desk@1x.png" 
+        alt="two pink flowers"
+        width="100%"
+        height="100%"
+        loading="lazy"  
+    />
+    </picture>
+  </div>
+ </div>
 </section>

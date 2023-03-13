@@ -1,0 +1,130 @@
+.display {
+  display: none;
+}
+.backdrop-thnx {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  opacity: 1;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-thnx {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 1);
+  padding: 32px 16px 32px;
+  width: 100%;
+  max-width: 272px;
+
+  /* max-height: 357px; */
+}
+
+@media screen and (min-width: 768px) {
+  .modal-thnx {
+    min-width: 480px;
+    min-height: 505px;
+    padding: 54px 32px 54px;
+  }
+}
+
+.thnx-btn {
+  position: absolute;
+  top: 19px;
+  right: 19px;
+  width: 12px;
+  height: 12px;
+  background-color: black;
+}
+
+@media screen and (min-width: 768px) {
+  .thnx-btn {
+    top: 24px;
+    right: 24px;
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.thnx-img {
+  /* margin-left: auto;
+  margin-right: auto; */
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .thnx-img {
+    width: 367px;
+    height: 202px;
+  }
+}
+
+.thnx-svg {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.thnx-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.thnx-you {
+  color: rgba(0, 0, 0, 1);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: calc(24 / 20);
+  padding-bottom: 14px;
+}
+@media screen and (min-width: 768px) {
+  .thnx-you {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: calc(39 / 32);
+    padding-bottom: 16px;
+  }
+}
+.thnx-text {
+  color: rgba(0, 0, 0, 1);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: calc(15 / 12);
+  padding-bottom: 18px;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .thnx-text {
+    font-size: 16px;
+    line-height: calc(20 / 16);
+    padding-bottom: 34px;
+  }
+}
+.thnx-continue {
+  min-width: 240px;
+  min-height: 37px;
+  color: rgba(255, 255, 255, 1);
+  font-size: 14px;
+  line-height: calc(17 / 14);
+  font-weight: 600;
+  background-color: #e86f54;
+  border: none;
+  border-radius: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .thnx-continue {
+    min-width: 416px;
+    min-height: 50px;
+    font-size: 18px;
+    line-height: calc(22 / 118);
+  }
+}
