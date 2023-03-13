@@ -42,7 +42,9 @@
   .delivery-number {
     font-size: 26px;
     line-height: calc(32 / 26);
-    padding: 16px 24px;
+    width: 64px;
+    height: 64px;
+    padding: 16px 26px;
   }
   .delivery-item {
     font-size: 24px;
