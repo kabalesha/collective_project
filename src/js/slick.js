@@ -1,7 +1,7 @@
 $('.responsive').slick({
     // dots: true,
-    prevArrow: '<button type="button" class="my-slick-prev"><svg class="blog-svg" width="100%" height="100%"><use href="./img/icons.svg#icon-left-arrow"></use></svg></button>',
-    nextArrow: '<button type="button" class="my-slick-next"><svg class="blog-svg" width="100%" height="100%"><use href="./img/icons.svg#icon-right-arrow"></use></svg></button>',
+    prevArrow: '<button type="button" class="my-slick-prev"></button>',
+    nextArrow: '<button type="button" class="my-slick-next"></button>',
     infinite: true,
     speed: 300,
     slidesToScroll: 1,
