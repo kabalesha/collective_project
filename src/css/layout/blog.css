@@ -78,6 +78,7 @@
 .img-blog {
   object-fit: cover;
   object-position: center;
+  min-width: 100%;
 }
 
 .arrow-btn {
@@ -145,15 +146,15 @@
 .slider {
   display: none;
 }
-@media screen and (min-width: 1280px){
+@media screen and (min-width: 1280px) {
   .slider {
-    display:inherit;
+    display: inherit;
   }
 }
 /* .pic-size{
   width: 390px;
 } */
-.my-slick-prev{
+.my-slick-prev {
   position: absolute;
   margin-right: 10px;
   right: 50%;
@@ -161,7 +162,7 @@
   width: 30px;
   height: 30px;
 }
-.my-slick-next{
+.my-slick-next {
   position: absolute;
   margin-left: 10px;
   left: 50%;
@@ -169,8 +170,8 @@
   width: 30px;
   height: 30px;
 }
-@media screen and (min-width: 768px){
-  .my-slick-prev{
+@media screen and (min-width: 768px) {
+  .my-slick-prev {
     position: absolute;
     margin-right: 10px;
     right: 50%;
@@ -178,7 +179,7 @@
     width: 60px;
     height: 60px;
   }
-  .my-slick-next{
+  .my-slick-next {
     position: absolute;
     margin-left: 10px;
     left: 50%;
@@ -187,8 +188,8 @@
     height: 60px;
   }
 }
-@media screen and (min-width: 1280px){
-  .my-slick-prev{
+@media screen and (min-width: 1280px) {
+  .my-slick-prev {
     position: absolute;
     margin-right: 10px;
     right: 50%;
@@ -196,7 +197,7 @@
     width: 60px;
     height: 60px;
   }
-  .my-slick-next{
+  .my-slick-next {
     position: absolute;
     margin-left: 10px;
     left: 50%;
@@ -205,7 +206,7 @@
     height: 60px;
   }
 }
- /* .display{
+/* .display{
   display: none;
 }
 @media screen and (min-width: 1280px){
