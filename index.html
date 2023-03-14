@@ -26,7 +26,7 @@
     
     
     <script type="module" crossorigin src="/collective_project/assets/index-2d4ea6a7.js"></script>
-    <link rel="stylesheet" href="/collective_project/assets/index-b82dcad4.css">
+    <link rel="stylesheet" href="/collective_project/assets/index-09bd0d20.css">
   </head>
   <body>
     <!-- Partials -->
@@ -977,44 +977,49 @@
           loading="lazy"
         />
       </picture>
-      <button
-        class="modal-btn-subscribe-close"
-        type="button"
-        data-modal-sbscr-close
-      >
-        <svg class="icon-close-modal" width="16" height="16">
-          <use href="/collective_project/assets/icons-2cef24bd.svg#icon-cross"></use>
+    </div>
+    <button
+      class="modal-btn-subscribe-close"
+      type="button"
+      data-modal-sbscr-close
+    >
+      <svg class="icon-close-modal" width="16" height="16">
+        <use href="/collective_project/assets/icons-2cef24bd.svg#icon-cross"></use>
+      </svg>
+    </button>
+    <div class="container-subscribe">
+      <strong class="modal-subscribe-title">Follow to our newsletter</strong>
+      <p class="subscribe-txt">
+        Be the first to get exclusive offers and the latest news on our product
+        directly in your box.
+      </p>
+      <form class="modal-form" name="modal_form_subscribe">
+        <label class="modal-subscribe-label" for="user_email_subscribe"
+          >Email</label
+        >
+        <input
+          class="subscribe-input"
+          type="email"
+          name="subscribe_email"
+          id="user_email_subscribe"
+          placeholder="Your email"
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+          required
+        />
+
+        <svg class="subscribe-icon">
+          <use
+            class="subscribe-icon-valid"
+            href="/collective_project/assets/icons-2cef24bd.svg#sucess-logo"
+          ></use>
+          <use
+            class="subscribe-icon-invalid"
+            href="/collective_project/assets/icons-2cef24bd.svg#error-logo"
+          ></use>
         </svg>
-      </button>
-      <div class="container-subscribe">
-        <strong class="modal-subscribe-title">Follow to our newsletter</strong>
-        <p class="subscribe-txt">
-          Be the first to get exclusive offers and the latest news on our
-          product directly in your box.
-        </p>
-        <form class="modal-form" name="modal_form_subscribe">
-          <input
-            class="subscribe-input"
-            type="email"
-            name="subscribe_email"
-            placeholder="Your email"
-            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-            required
-          />
-          <svg class="subscribe-icon">
-            <use
-              class="subscribe-icon-valid"
-              href="/collective_project/assets/icons-2cef24bd.svg#sucess-logo"
-            ></use>
-            <use
-              class="subscribe-icon-invalid"
-              href="/collective_project/assets/icons-2cef24bd.svg#error-logo"
-            ></use>
-          </svg>
-          <label class="modal-subscribe-label" for="user_email">Email</label>
-        </form>
+
         <button class="btn subscribe-modal-btn" type="submit">Subscribe</button>
-      </div>
+      </form>
     </div>
   </div>
 </div>
