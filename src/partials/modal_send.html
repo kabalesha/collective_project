@@ -1,6 +1,7 @@
 <!-- modal window -->
 <div class="backdrop-modal is-hidden" data-modal>
-  <div class="modal-send">
+  <!-- Contact us -->
+  <div class="modal-send" data-modal-send>
     <button class="modal-send-btn flex-center" type="button" data-modal-close>
       <svg class="modal-send-icon-close">
         <use href="./img/icons.svg#icon-cross"></use>
@@ -12,9 +13,8 @@
       before you make an order please fill in your contact details. We will call
       you back.
     </p>
-    <form class="modal-send-form" name="modal_send_form" data-modal-form>
+    <form class="modal-send-form" name="modal_send_form" data-modal-send-form>
       <!-- user name -->
-
       <div class="modal-send-form-group modal-send-form-group-user">
         <input
           type="text"
@@ -28,7 +28,6 @@
           required
           data-modal-input
         />
-        <!-- pattern="^[a-zA-Z]+\s[a-zA-Z]+$" -->
         <svg class="modal-send-icon">
           <use
             class="modal-send-icon-valid"
@@ -42,7 +41,6 @@
         <label class="modal-send-form-label" for="user_name">Name</label>
       </div>
       <!-- email -->
-
       <div class="modal-send-form-group modal-send-form-group-mail">
         <input
           type="email"
@@ -77,5 +75,28 @@
         Send
       </button>
     </form>
+  </div>
+  <!--Thank you  -->
+  <div class="modal-thnx is-hidden" data-modal-thnx>
+    <button type="button" class="thnx-btn" data-modal-thnx-close>
+      <svg class="thnx-clouse">
+        <use href="./img/icons.svg#icon-close-modal"></use>
+      </svg>
+    </button>
+    <div class="thnx-svg">
+      <svg class="thnx-img">
+        <use href="./img/icons.svg#icon-thank_you"></use>
+      </svg>
+    </div>
+
+    <div class="thnx-flex">
+      <strong class="thnx-you">Thank you!</strong>
+      <p class="thnx-text">
+        We have received your contact details and will reach you soon.
+      </p>
+      <button type="button" class="thnx-continue btn" data-modal-thnx-close>
+        Continue
+      </button>
+    </div>
   </div>
 </div>
