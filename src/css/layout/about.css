@@ -50,3 +50,24 @@
         line-height: 1.22;
     }
 }
+.picture-about-img {
+    display: block;
+  }
+  .about-img {
+    
+    width: 344px;
+  }
+  @media screen and (min-width: 768px){
+    .about-img {
+        
+        width: 632px;
+      }
+    
+  }
+  @media screen and (min-width: 1280px){
+    .about-img {
+        
+        width: 632px;
+      }
+    
+  }
