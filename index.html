@@ -25,8 +25,8 @@
     
     
     
-    <script type="module" crossorigin src="/collective_project/assets/index-84cfce33.js"></script>
-    <link rel="stylesheet" href="/collective_project/assets/index-9a0d6e9b.css">
+    <script type="module" crossorigin src="/collective_project/assets/index-431f505d.js"></script>
+    <link rel="stylesheet" href="/collective_project/assets/index-a982cd8f.css">
   </head>
   <body>
     <!-- Partials -->
@@ -389,7 +389,9 @@
         </div>
       </li>
     </ul>
-    <button class="btn store-btn" type="button">Order flowers</button>
+    <button class="btn store-btn" type="button" data-modal-open>
+      Order flowers
+    </button>
   </div>
 </section>
 
@@ -854,7 +856,8 @@
 </footer>
     <!-- modal window -->
 <div class="backdrop-modal is-hidden" data-modal>
-  <div class="modal-send">
+  <!-- Contact us -->
+  <div class="modal-send" data-modal-send>
     <button class="modal-send-btn flex-center" type="button" data-modal-close>
       <svg class="modal-send-icon-close">
         <use href="/collective_project/assets/icons-2cef24bd.svg#icon-cross"></use>
@@ -866,9 +869,8 @@
       before you make an order please fill in your contact details. We will call
       you back.
     </p>
-    <form class="modal-send-form" name="modal_send_form" data-modal-form>
+    <form class="modal-send-form" name="modal_send_form" data-modal-send-form>
       <!-- user name -->
-
       <div class="modal-send-form-group modal-send-form-group-user">
         <input
           type="text"
@@ -882,7 +884,6 @@
           required
           data-modal-input
         />
-        <!-- pattern="^[a-zA-Z]+\s[a-zA-Z]+$" -->
         <svg class="modal-send-icon">
           <use
             class="modal-send-icon-valid"
@@ -896,7 +897,6 @@
         <label class="modal-send-form-label" for="user_name">Name</label>
       </div>
       <!-- email -->
-
       <div class="modal-send-form-group modal-send-form-group-mail">
         <input
           type="email"
@@ -931,6 +931,29 @@
         Send
       </button>
     </form>
+  </div>
+  <!--Thank you  -->
+  <div class="modal-thnx is-hidden" data-modal-thnx>
+    <button type="button" class="thnx-btn" data-modal-thnx-close>
+      <svg class="thnx-clouse">
+        <use href="/collective_project/assets/icons-2cef24bd.svg#icon-close-modal"></use>
+      </svg>
+    </button>
+    <div class="thnx-svg">
+      <svg class="thnx-img">
+        <use href="/collective_project/assets/icons-2cef24bd.svg#icon-thank_you"></use>
+      </svg>
+    </div>
+
+    <div class="thnx-flex">
+      <strong class="thnx-you">Thank you!</strong>
+      <p class="thnx-text">
+        We have received your contact details and will reach you soon.
+      </p>
+      <button type="button" class="thnx-continue btn" data-modal-thnx-close>
+        Continue
+      </button>
+    </div>
   </div>
 </div>
 
