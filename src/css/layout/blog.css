@@ -140,8 +140,6 @@
   }
 }
 
-.is-hiden {
-}
 @media screen and (max-width: 1279px) {
   .is-hiden {
     display: none;
