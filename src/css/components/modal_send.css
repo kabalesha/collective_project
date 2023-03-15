@@ -19,9 +19,9 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  width: calc(100vw - 48px);
+  width: 100%;
   z-index: 30;
-  max-width: 432px;
+  max-width: 272px;
   min-width: 272px;
   max-height: 357px;
   padding: 28px 16px;
