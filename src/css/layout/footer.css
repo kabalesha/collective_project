@@ -2,13 +2,17 @@
     .footer-logo {
         display: none;
     }
+
+    .link-logo {
+        display: none;
+    }
 }
 
 .container {
     min-width: 320px;
     max-width: 480px;
-    margin-left: auto;
     margin-right: auto;
+    margin-left: auto;
     padding-left: 16px;
     padding-right: 16px;
 }
@@ -160,7 +164,7 @@
     }
 
     .footer-contacts {
-        width: 263px;
+        width: 237px;
     }
 
     .footer-subtitle-contacts {
@@ -200,13 +204,11 @@
     .footer {
         padding-top: 72px;
         padding-bottom: 72px;
-        padding-left: 24px;
-        padding-right: 24px;
         justify-content: space-between;
     }
 
-    .footer-logo {
-        margin-right: 118px;
+    .link-logo {
+        width: 166px;
     }
 
     .footer-gap-div {
@@ -233,5 +235,11 @@
 
     .social-list {
         display: block;
+
+    }
+
+    .link-social {
+        padding-right: 25px;
+        padding-left: 25px;
     }
 }
