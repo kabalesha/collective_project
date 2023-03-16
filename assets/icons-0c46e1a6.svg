@@ -72,7 +72,7 @@
       <path fill="none" stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6667" d="M24.009 8.003l-16.006 16.006M8.003 8.003l16.006 16.006"/>
     </symbol> 
     <symbol id="icon-arrow-up" viewBox="0 0 32 32">
-      <path fill="#f58b3d" d="m27.414 12.586-10-10a2 2 0 0 0-2.828 0l-10 10a2 2 0 1 0 2.828 2.828L14 8.828V28a2 2 0 1 0 4 0V8.828l6.586 6.586c.39.39.902.586 1.414.586s1.024-.195 1.414-.586a2 2 0 0 0 0-2.828z"/>
+      <path fill="#e86f54" d="m27.414 12.586-10-10a2 2 0 0 0-2.828 0l-10 10a2 2 0 1 0 2.828 2.828L14 8.828V28a2 2 0 1 0 4 0V8.828l6.586 6.586c.39.39.902.586 1.414.586s1.024-.195 1.414-.586a2 2 0 0 0 0-2.828z"/>
     </symbol>
   </defs>
 </svg>
